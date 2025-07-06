@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --grey-color: #555;
+  --light-grey-color: #777;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: blue;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+nav .logo-nav{
+  color: black;
+}
+/* End of Common styles */
+/* Header */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-header {
+  background-color: var(--secondary-color);
+  /* margin: 7.5rem; */
+  box-shadow: 0 1rem 3rem var(--grey-color);
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background:  linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)),  
+    url(../../images/profile/my-kiff.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  perspective: 100rem; 
+}
+.logo {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.logo h1 {  
+  display: flex;   
+}
+
+.logo h1 span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: greenyellow;
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.logo h1 span:nth-child(1) {
+  color: red;
+  animation: drop-letters 5s 0.1s infinite;
+}
+
+.logo h1 span:nth-child(2) {
+  animation: drop-letters 5s 0.2s infinite;
+}
+
+.logo h1 span:nth-child(3) {
+  animation: drop-letters 5s 0.3s infinite;
+}
+
+.logo h1 span:nth-child(4) {
+  animation: drop-letters 5s 0.4s infinite;
+}
+
+.logo h1 span:nth-child(5) {
+  animation: drop-letters 5s 0.5s infinite;
+}
+
+.logo h1 span:nth-child(6) {
+  animation: drop-letters 5s 0.6s infinite;
+}
+
+.logo h1 span:nth-child(7) {
+  animation: drop-letters 5s 0.7s infinite;
+}
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-100%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header-image {
+  width: 35%;
+  animation: image-float 150s infinite;
+}
+
+@keyframes image-float {
+  0% {
+    transform: translateZ(40rem);
+    opacity: 1; 
+  }
+  40% {
+    transform: translateZ(-500rem) translateX(150rem);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateZ(-1500rem) translateX(800rem);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translateZ(-50rem) translateX(100rem);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateZ(40rem);
+    opacity: 1;
+  }
+}
+/* End of Header */
+.content h2{
+  font-size:220%;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+.centr{
+  text-align: center;
+}
+
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: hsl(42, 63%, 48%);
+  margin-left: auto;
+  margin-right: auto;
+}
+/**********responsive*****************/
+@media (max-width: 1000px) {
+
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    margin: 0;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  } 
+}
+/* End of Responsive */
+ 
+
+
