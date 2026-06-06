@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire devis</title>
+</head>
+
+<body>
+    <header>
+        <div class="lo"><img src="images/logo-secu-circle.png" alt="" width="5%" height="10%"></div>
+    </header>
+
+    <main>
+        <h1>Devis</h1>
+        <form action="" method="post" class="formulaire-devis">
+            <p><label for="entreprise">
+                    Nom de l'entreprise
+                </label>
+                <input type="text" name="entreprise" id="entreprise" placeholder="Nom de l'entreprise" required>
+            </p>
+
+            <p>
+                <label for="representant">
+                    Nom du représentant
+                </label>
+                <input type="text" name="representant" id="representant" placeholder="Representant" required>
+            </p>
+            <p>
+                <label for="adresse">
+                    Votre Adresse
+                </label>
+                <input type="texte" name="adresse" id="adresse" placeholder="Votre adresse" required>
+            </p>
+            <p><label for="email">
+                    Votre Email
+                </label>
+                <input type="email" name="email" id="email" placeholder="Votre Email" required>
+            </p>
+
+
+
+            <p> <label for="tel">
+                    Votre Téléphone
+                </label>
+                <input type="tel" name="tel" id="tel" placeholder="Votre téléphone" required>
+            </p>
+
+            <p><label for="debut">
+                    <span class="dispo">Disponibilités souhaitées:</span>
+                    Apartir du
+                </label>
+                <input type="date" name="debut" id="debut" placeholder="Date de début" required>
+                <label for="fin">
+                    Au
+                </label>
+                <input type="date" name="fin" id="fin" placeholder="Date de fin" required>
+            </p>
+
+            <p><label for="service">
+                    Service souhaitée
+                </label>
+                <select name="service" id="service">
+                    <option value="NADA">......</option>
+                    <option value="APS">APS</option>
+                    <option value="SSIAP1">SSIAP1</option>
+                    <option value="SSIAP2">SSIAP2</option>
+                    <option value="SSIAP3">SSIAP3</option>
+                    <option value="MIXTE">Mixte</option>
+                </select>
+            </p>
+            <!-- mixte -->
+            <div class="mixte">
+                <p><label for="quantite">
+                        Nb Agents SSIAP1
+                    </label>
+                    <input type="number" name="quantite" id="quantite" placeholder="0" required>
+                </p>
+                <p><label for="quantite">
+                        Nb Agents SSIAP2
+                    </label>
+                    <input type="number" name="quantite" id="quantite" placeholder="0" required>
+                </p>
+
+                <p><label for="quantite">
+                        Nb Agents SSIAP3
+                    </label>
+                    <input type="number" name="quantite" id="quantite" placeholder="0" required>
+                </p>
+
+                <p><label for="quantite">
+                        Nb Agents APS
+                    </label>
+                    <input type="number" name="quantite" id="quantite" placeholder="0" required>
+                </p>
+            </div>
+
+            <p><label for="quantite">
+                    Nombres d'agents souhaitées
+                </label>
+                <input type="number" name="quantite" id="quantite" placeholder="0" required>
+            </p>
+
+            <p><label for="motif">
+                    Le motif du service
+                </label>
+                <select name="motif" id="motif">
+                    <option value="nada">..........</option>
+                    <option value="remplacement">Remplacement</option>
+                    <option value="renforcement">Renforcement</option>
+                    <option value="absence">Absence</option>
+                    <option value="nouveau marché">Nouveau marché</option>
+                    <option value="urgence">Urgence</option>
+                </select>
+            </p>
+
+            <p><label for="vacation">
+                    Temps de travail
+                </label>
+                <select name="vacation" id="vacation">
+                    <option value="nada">.....</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                </select>
+            </p>
+            <p><label for="vacation">
+                    Période de travail
+                </label>
+                <select name="vacation" id="vacation">
+                    <option value="nada">.....</option>
+                    <option value="4">Jour</option>
+                    <option value="6">Nuit</option>
+                    <option value="8">Mixte</option>
+
+                </select>
+            </p>
+
+            <p><label for="kilometrage">
+                    Kilométrage
+                </label>
+                <select name="kilometrage" id="kilometrage">
+                    <option value="nada">.....</option>
+                    <option value="paris">Paris</option>
+                    <option value="hors-paris">Hors Paris</option>
+                    <option value="mixte">Mixte</option>
+
+                </select>
+            </p>
+            <div class="mixte1">
+                <p><label for="quantite">
+                        Nb Agents sur Paris
+                    </label>
+                    <input type="number" name="quantite" id="quantite" placeholder="0" required>
+                </p>
+                <p><label for="quantite">
+                        Nb Agents Hors Paris
+                    </label>
+                    <input type="number" name="quantite" id="quantite" placeholder="0" required>
+                </p>
+            </div>
+
+            <p><label for="description">Dites-nous en un peu plus !</label>
+                <textarea name="" id="description" cols="50" rows="10" placeholder="Tapez votre message ici !"
+                    spellcheck></textarea>
+            </p>
+            <p class="submit"><input type="button" value="valider"></p>
+
+
+
+
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>

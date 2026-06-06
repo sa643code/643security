@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{  
+    
+    margin: 25px auto;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulaire-devis,
+h1 {
+    width: 60%;
+    max-width: 1250px;
+    margin: 25px auto;
+    border: 2px dotted #f90;
+
+}
+
+.formulaire-devis label {
+
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.formulaire-devis select,
+.formulaire-devis input::placeholder {
+
+
+    color: #983400;
+}
+
+.formulaire-devis p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+
+.formulaire-devis textarea {
+    color: #983400;
+
+}
+
+.dispo {
+    margin-right: 5px;
+}
+
+.submit input {
+    margin: 50px auto;
+    width: 145px;
+    height: 45px;
+    border: 2px dotted #f90;
+    border-radius: 10%;
+}
+
+.submit input:hover {
+    background-color: cornflowerblue;
+    font-weight: bold;
+    color: blue;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.mixte,
+.mixte1 {
+    display: none;
+    color: blue;
+    background-color: cornflowerblue;
+    width: 40%;
+}
+
+.wrapper {
+    margin: 25px auto;
+}
+
+.subheader,
+.contain-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto;
+    width: 60%;
+}
+
+
+
+.but {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    width: 60%;
+}
+
+button {
+    margin: 0 20px;
+
+    width: 145px;
+    height: 45px;
+    border: 2px dotted #f90;
+    border-radius: 10%;
+}
+
+.green:hover {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.red:hover {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.blue {   
+    background-color: #d7e8f2;    
+}
+.blue1 {
+    display: flex;    
+    color: blue; 
+    padding-right: 10px;
+    
+}
+
